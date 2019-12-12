@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+  <head>
+    
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <title>Creating Your Personal Website With Hugo and Hosting on Github Pages - Flávio Luiz Maria</title>
+  <meta name="description" content="In this post I will explain how I&#39;ve created this website your are accessing right now through the Github Pages.
+Yes, it&#39;s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.
+The objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.
+The only issue with Github pages it that your website need to be static, but don&#39;t worry, we have a solution for this.">
+  <meta name="author" content="Flávio Luiz Maria"/><script type="application/ld+json">
+{
+    "@context": "http://schema.org",
+    "@type": "WebSite",
+    "name": "Flávio Luiz Maria",
+    
+    "url": "https:\/\/flmaria.github.io\/"
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Organization",
+  "name": "",
+  "url": "https:\/\/flmaria.github.io\/"
+  
+  
+  
+  
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [{
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@id": "https:\/\/flmaria.github.io\/",
+          "name": "home"
+        }
+    },{
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@id": "https:\/\/flmaria.github.io\/posts\/creating-your-personal-website-with-hugo-and-hosting-on-github-pages\/",
+          "name": "Creating your personal website with hugo and hosting on github pages"
+        }
+    }]
+}
+</script><script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "author": {
+    "name" : "Flávio Luiz Maria"
+  },
+  "headline": "Creating Your Personal Website With Hugo and Hosting on Github Pages",
+  "description" : "In this post I will explain how I\x27ve created this website your are accessing right now through the Github Pages.\nYes, it\x27s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.\nThe objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.\nThe only issue with Github pages it that your website need to be static, but don\x27t worry, we have a solution for this.",
+  "inLanguage" : "en",
+  "wordCount":  561 ,
+  "datePublished" : "2019-12-06T12:51:21",
+  "dateModified" : "2019-12-06T12:51:21",
+  "image" : "https:\/\/flmaria.github.io\/img\/avatar-icon.png",
+  "keywords" : [ "" ],
+  "mainEntityOfPage" : "https:\/\/flmaria.github.io\/posts\/creating-your-personal-website-with-hugo-and-hosting-on-github-pages\/",
+  "publisher" : {
+    "@type": "Organization",
+    "name" : "https:\/\/flmaria.github.io\/",
+    "logo" : {
+        "@type" : "ImageObject",
+        "url" : "https:\/\/flmaria.github.io\/img\/avatar-icon.png",
+        "height" :  60 ,
+        "width" :  60
+    }
+  }
+}
+</script>
+
+<meta property="og:title" content="Creating Your Personal Website With Hugo and Hosting on Github Pages" />
+<meta property="og:description" content="In this post I will explain how I&#39;ve created this website your are accessing right now through the Github Pages.
+Yes, it&#39;s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.
+The objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.
+The only issue with Github pages it that your website need to be static, but don&#39;t worry, we have a solution for this.">
+<meta property="og:image" content="https://flmaria.github.io/img/avatar-icon.png" />
+<meta property="og:url" content="https://flmaria.github.io/posts/creating-your-personal-website-with-hugo-and-hosting-on-github-pages/" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="Flávio Luiz Maria" />
+
+  <meta name="twitter:title" content="Creating Your Personal Website With Hugo and Hosting on Github Pages" />
+  <meta name="twitter:description" content="In this post I will explain how I&#39;ve created this website your are accessing right now through the Github Pages.
+Yes, it&#39;s is possible to have your personal website on Github and not expend any money …">
+  <meta name="twitter:image" content="https://flmaria.github.io/img/avatar-icon.png" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:site" content="@flaviolm" />
+  <meta name="twitter:creator" content="@flaviolm" />
+  <link href='https://flmaria.github.io/img/favicon.ico' rel='icon' type='image/x-icon'/>
+  <meta name="generator" content="Hugo 0.60.1" />
+  <link rel="alternate" href="https://flmaria.github.io/index.xml" type="application/rss+xml" title="Flávio Luiz Maria"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" integrity="sha384-9eLZqc9ds8eNjO3TmqPeYcDj8n+Qfa4nuSiGYa6DjLNcv9BtN69ZIulL9+8CqC9Y" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://flmaria.github.io/css/main.css" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" />
+  <link rel="stylesheet" href="https://flmaria.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://flmaria.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
+
+
+
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="https://flmaria.github.io/">Flávio Luiz Maria</a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="main-navbar">
+      <ul class="nav navbar-nav navbar-right">
+        
+          
+            <li>
+              <a title="Blog" href="/posts">Blog</a>
+            </li>
+          
+        
+          
+            <li>
+              <a title="About" href="/about">About</a>
+            </li>
+          
+        
+
+        
+
+        
+          <li>
+            <a href="#modalSearch" data-toggle="modal" data-target="#modalSearch" style="outline: none;">
+              <span class="hidden-sm hidden-md hidden-lg">Search</span> <span id="searchGlyph" class="glyphicon glyphicon-search"></span>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+
+    
+      <div class="avatar-container">
+        <div class="avatar-img-border">
+          <a title="Flávio Luiz Maria" href="https://flmaria.github.io/">
+            <img class="avatar-img" src="https://flmaria.github.io/img/avatar-icon.png" alt="Flávio Luiz Maria" />
+          </a>
+        </div>
+      </div>
+    
+
+  </div>
+</nav>
+
+
+
+  <div id="modalSearch" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title">Search Flávio Luiz Maria</h4>
+        </div>
+        <div class="modal-body">
+          <gcse:search></gcse:search>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+    
+
+
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+<div class="pswp__bg"></div>
+
+<div class="pswp__scroll-wrap">
+    
+    <div class="pswp__container">
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+      <div class="pswp__item"></div>
+    </div>
+    
+    <div class="pswp__ui pswp__ui--hidden">
+    <div class="pswp__top-bar">
+      
+      <div class="pswp__counter"></div>
+      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+      <button class="pswp__button pswp__button--share" title="Share"></button>
+      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+      
+      
+      <div class="pswp__preloader">
+        <div class="pswp__preloader__icn">
+          <div class="pswp__preloader__cut">
+            <div class="pswp__preloader__donut"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+      <div class="pswp__share-tooltip"></div>
+    </div>
+    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+    </button>
+    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+    </button>
+    <div class="pswp__caption">
+      <div class="pswp__caption__center"></div>
+    </div>
+    </div>
+    </div>
+</div>
+
+
+  
+  
+  
+
+
+
+
+
+
+  
+
+  <header class="header-section ">
+    
+    <div class="intro-header no-img">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+            <div class="posts-heading">
+              
+                <h1>Creating Your Personal Website With Hugo and Hosting on Github Pages</h1>
+              
+              
+                <hr class="small">
+              
+              
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+    
+<div class="container" role="main">
+  <div class="row">
+    <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+      <article role="main" class="blog-post">
+        <p>In this post I will explain how I've created this website your are accessing right now through the Github Pages.</p>
+<p>Yes, it's is possible to have your personal website on Github and not expend any money with hosting and domain to access it.</p>
+<p>The objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.</p>
+<p>The only issue with Github pages it that your website need to be static, but don't worry, we have a solution for this.</p>
+<p>So how to have a blog that is generally a dynamic website hosting as a static website on Github Pages?</p>
+<h4 id="hugo-is-the-answer">Hugo is the answer</h4>
+<p>Hugo is a framework that allows you generate a static website through out terminal commands.</p>
+<p>The idea is to have 2 repositories on your Github account, the first one will be placed your source from the Hugo's project and another to receive your generated static files.</p>
+<p>For this tutorial I'm using Mac OS, so all the instructions will be placed considering the following:</p>
+<ul>
+<li>You have Homebrew installed;</li>
+<li>Your are familiar using a terminal;</li>
+</ul>
+<h4 id="lets-begin">Let's begin&hellip;</h4>
+<p>First we have to install Hugo, using your preferred terminal enter:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">brew install hugo</code></pre></div>
+<p>To check if it was correctly installed enter</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo version</code></pre></div>
+<p>Now, we need to create your Hugo Project</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site hugo_site
+<span class="nb">cd</span> hugo_site</code></pre></div>
+<p>Define it as a Git local repository</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git init</code></pre></div>
+<p>Let's add a <a href="https://themes.gohugo.io/beautifulhugo/">theme</a> for this website, I'm using <a href="https://themes.gohugo.io/beautifulhugo/">Beaulfigul Hugo</a></p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git submodule add https://github.com/halogenica/beautifulhugo.git themes/beautifulhugo</code></pre></div>
+<p>This theme has a sample configuration file we can copy and use it in our project</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cp themes/beautifulhugo/exampleSite/config.toml .</code></pre></div>
+<p>With our theme added, we can run our project</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo server -D</code></pre></div>
+<p>We can access it right now on your browser <a href="http://localhost:1313/">http://localhost:1313/</a></p>
+<!-- raw HTML omitted -->
+<h2 id="deploying">Deploying</h2>
+<p>Like I explained before, we have to create two repositories on Github.
+Access your Github account and create a repository called hugo_site and another called <code>&lt;your_github_username&gt;</code>.github.io</p>
+<p>Important: replace <code>&lt;your_github_username&gt;</code> with your exact Github username.</p>
+<p>Let's vinculate your local repository to the Github we have created</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git remote add origin git@github.com:&lt;your_github_username&gt;/hugo_site.git</code></pre></div>
+<p>Add all files to be committed and commit all files</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git add .
+git commit -m <span class="s2">&#34;Adding initial files from my Hugo website&#34;</span></code></pre></div>
+<p>Now we are going to create a folder in our project to receive the static generated files and let's define it as a Git sub repository</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git submodule add git@github.com:&lt;your_github_username&gt;/&lt;your_github_username&gt;.github.io.git</code></pre></div>
+<p>We can now commit again all the changes made and push to the Github.</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">git add .
+git commit -m <span class="s2">&#34;Second change in the initial files&#34;</span>
+git push -u origin master</code></pre></div>
+<p>For while, we only have pushed files to the hugo_site repository, but remember, Github Pages only permits you having a website with static files, so we need to push the generated static files to your other repository <code>&lt;your_github_username&gt;</code>.github.io.git</p>
+<p>Let's inform Hugo that all generated files go to our <code>&lt;your_github_username&gt;</code>.github.io.git local folder and our URL to access our website is <code>&lt;your_github_username&gt;</code>.github.io. Open your config.toml and edit:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nv">baseURL</span> <span class="o">=</span> <span class="s2">&#34;https://&lt;your_github_username&gt;.github.io/&#34;</span>
+...
+<span class="nv">publishDir</span> <span class="o">=</span> <span class="s2">&#34;&lt;your_github_username&gt;.github.io&#34;</span>
+...</code></pre></div>
+<p>Now type the following command to generate the static files:</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> ..
+hugo</code></pre></div>
+<p>We are almost there, now we only commit those generated filed to our <code>&lt;your_github_username&gt;</code>.github.io repository</p>
+<div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash"><span class="nb">cd</span> &lt;your_github_username&gt;.github.io
+git add .
+git commit -m <span class="s2">&#34;Commiting my first static generated files&#34;</span>
+git push origin master</code></pre></div>
+<p>That's it, you can access your website through out of the URL http://&lt;your_github_username&gt;.github.io</p>
+
+
+        
+
+        
+            <hr/>
+            <section id="social-share">
+              <div class="list-inline footer-links">
+                
+
+<div class="share-box" aria-hidden="true">
+    <ul class="share">
+      
+      <li>
+        <a href="//twitter.com/share?url=https%3a%2f%2fflmaria.github.io%2fposts%2fcreating-your-personal-website-with-hugo-and-hosting-on-github-pages%2f&amp;text=Creating%20Your%20Personal%20Website%20With%20Hugo%20and%20Hosting%20on%20Github%20Pages&amp;via=flaviolm" target="_blank" title="Share on Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fflmaria.github.io%2fposts%2fcreating-your-personal-website-with-hugo-and-hosting-on-github-pages%2f" target="_blank" title="Share on Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//reddit.com/submit?url=https%3a%2f%2fflmaria.github.io%2fposts%2fcreating-your-personal-website-with-hugo-and-hosting-on-github-pages%2f&amp;title=Creating%20Your%20Personal%20Website%20With%20Hugo%20and%20Hosting%20on%20Github%20Pages" target="_blank" title="Share on Reddit">
+          <i class="fab fa-reddit"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.linkedin.com/shareArticle?url=https%3a%2f%2fflmaria.github.io%2fposts%2fcreating-your-personal-website-with-hugo-and-hosting-on-github-pages%2f&amp;title=Creating%20Your%20Personal%20Website%20With%20Hugo%20and%20Hosting%20on%20Github%20Pages" target="_blank" title="Share on LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.stumbleupon.com/submit?url=https%3a%2f%2fflmaria.github.io%2fposts%2fcreating-your-personal-website-with-hugo-and-hosting-on-github-pages%2f&amp;title=Creating%20Your%20Personal%20Website%20With%20Hugo%20and%20Hosting%20on%20Github%20Pages" target="_blank" title="Share on StumbleUpon">
+          <i class="fab fa-stumbleupon"></i>
+        </a>
+      </li>
+  
+      
+      <li>
+        <a href="//www.pinterest.com/pin/create/button/?url=https%3a%2f%2fflmaria.github.io%2fposts%2fcreating-your-personal-website-with-hugo-and-hosting-on-github-pages%2f&amp;description=Creating%20Your%20Personal%20Website%20With%20Hugo%20and%20Hosting%20on%20Github%20Pages" target="_blank" title="Share on Pinterest">
+          <i class="fab fa-pinterest"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+  
+
+              </div>
+            </section>
+        
+
+        
+          
+
+          
+        
+      </article>
+
+      
+        <ul class="pager blog-pager">
+          
+          
+        </ul>
+      
+
+
+      
+        
+        
+      
+
+    </div>
+  </div>
+</div>
+
+      
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+        <ul class="list-inline text-center footer-links">
+          
+              <li>
+                <a href="https://github.com/flmaria" title="GitHub">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://twitter.com/flaviolm" title="Twitter">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="https://linkedin.com/in/flavioluizmaria" title="LinkedIn">
+                  <span class="fa-stack fa-lg">
+                    <i class="fas fa-circle fa-stack-2x"></i>
+                    <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+                  </span>
+                </a>
+              </li>
+          
+          <li>
+            <a href="" title="RSS">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          
+        </ul>
+        <p class="credits copyright text-muted">
+          
+            
+              Flávio Luiz Maria
+            
+          
+
+          &nbsp;&bull;&nbsp;&copy;
+          
+            2019
+          
+
+          
+            &nbsp;&bull;&nbsp;
+            <a href="https://flmaria.github.io/">Flávio Luiz Maria</a>
+          
+        </p>
+        
+        <p class="credits theme-by text-muted">
+          <a href="https://gohugo.io">Hugo v0.60.1</a> powered &nbsp;&bull;&nbsp; Theme <a href="https://github.com/halogenica/beautifulhugo">Beautiful Hugo</a> adapted from <a href="https://deanattali.com/beautiful-jekyll/">Beautiful Jekyll</a>
+          
+        </p>
+      </div>
+    </div>
+  </div>
+</footer><script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.js" integrity="sha384-K3vbOmF2BtaVai+Qk37uypf7VrgBubhQreNQe9aGsz9lB63dIFiQVlJbr92dw2Lx" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/contrib/auto-render.min.js" integrity="sha384-kmZOZB5ObwgQnS/DuDg6TScgOiWWBiVt0plIRkZCmE6rDZGrEOQeHM5PcHi+nyqe" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+<script src="https://flmaria.github.io/js/main.js"></script>
+<script src="https://flmaria.github.io/js/highlight.min.js"></script>
+<script> hljs.initHighlightingOnLoad(); </script>
+<script> $(document).ready(function() {$("pre.chroma").css("padding","0");}); </script><script> renderMathInElement(document.body); </script><script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.js" integrity="sha384-QELNnmcmU8IR9ZAykt67vGr9/rZJdHbiWi64V88fCPaOohUlHCqUD/unNN0BXSqy" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe-ui-default.min.js" integrity="sha384-m67o7SkQ1ALzKZIFh4CiTA8tmadaujiTa9Vu+nqPSwDOqHrDmxLezTdFln8077+q" crossorigin="anonymous"></script><script src="https://flmaria.github.io/js/load-photoswipe.js"></script>
+
+
+
+<script>
+  (function() {
+    var cx = '016902342964086706084:dx6tydndljo';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
+
+
+
+
+
+    
+  </body>
+</html>
+
