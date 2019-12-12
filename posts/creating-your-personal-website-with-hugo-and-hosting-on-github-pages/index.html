@@ -10,8 +10,8 @@
   <title>Creating Your Personal Website With Hugo and Hosting on Github Pages - Flávio Luiz Maria</title>
   <meta name="description" content="In this post I will explain how I&#39;ve created this website your are accessing right now through the Github Pages.
 Yes, it&#39;s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.
-The objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.
-The only issue with Github pages it that your website need to be static, but don&#39;t worry, we have a solution for this.">
+The objective for this website was having an about page telling my work experience and a blog with posts explaining subjects I like to study.
+The only issue with Github Pages it that your website need to be static, but don&#39;t worry, we have a solution for this.">
   <meta name="author" content="Flávio Luiz Maria"/><script type="application/ld+json">
 {
     "@context": "http://schema.org",
@@ -60,9 +60,9 @@ The only issue with Github pages it that your website need to be static, but don
     "name" : "Flávio Luiz Maria"
   },
   "headline": "Creating Your Personal Website With Hugo and Hosting on Github Pages",
-  "description" : "In this post I will explain how I\x27ve created this website your are accessing right now through the Github Pages.\nYes, it\x27s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.\nThe objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.\nThe only issue with Github pages it that your website need to be static, but don\x27t worry, we have a solution for this.",
+  "description" : "In this post I will explain how I\x27ve created this website your are accessing right now through the Github Pages.\nYes, it\x27s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.\nThe objective for this website was having an about page telling my work experience and a blog with posts explaining subjects I like to study.\nThe only issue with Github Pages it that your website need to be static, but don\x27t worry, we have a solution for this.",
   "inLanguage" : "en",
-  "wordCount":  561 ,
+  "wordCount":  562 ,
   "datePublished" : "2019-12-06T12:51:21",
   "dateModified" : "2019-12-06T12:51:21",
   "image" : "https:\/\/flmaria.github.io\/img\/avatar-icon.png",
@@ -84,8 +84,8 @@ The only issue with Github pages it that your website need to be static, but don
 <meta property="og:title" content="Creating Your Personal Website With Hugo and Hosting on Github Pages" />
 <meta property="og:description" content="In this post I will explain how I&#39;ve created this website your are accessing right now through the Github Pages.
 Yes, it&#39;s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.
-The objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.
-The only issue with Github pages it that your website need to be static, but don&#39;t worry, we have a solution for this.">
+The objective for this website was having an about page telling my work experience and a blog with posts explaining subjects I like to study.
+The only issue with Github Pages it that your website need to be static, but don&#39;t worry, we have a solution for this.">
 <meta property="og:image" content="https://flmaria.github.io/img/avatar-icon.png" />
 <meta property="og:url" content="https://flmaria.github.io/posts/creating-your-personal-website-with-hugo-and-hosting-on-github-pages/" />
 <meta property="og:type" content="website" />
@@ -107,6 +107,17 @@ Yes, it&#39;s is possible to have your personal website on Github and not expend
   <link rel="stylesheet" href="https://flmaria.github.io/css/highlight.min.css" /><link rel="stylesheet" href="https://flmaria.github.io/css/codeblock.css" /><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/photoswipe.min.css" integrity="sha384-h/L2W9KefUClHWaty3SLE5F/qvc4djlyR4qY3NUV5HGQBBW7stbcfff1+I/vmsHh" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/4.1.2/default-skin/default-skin.min.css" integrity="sha384-iD0dNku6PYSIQLyfTOpB06F2KCZJAKLOThS5HRe8b3ibhdEQ6eKsFf/EeFxdOt5R" crossorigin="anonymous">
 
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-154443468-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
 
 
   </head>
@@ -273,21 +284,21 @@ Yes, it&#39;s is possible to have your personal website on Github and not expend
       <article role="main" class="blog-post">
         <p>In this post I will explain how I've created this website your are accessing right now through the Github Pages.</p>
 <p>Yes, it's is possible to have your personal website on Github and not expend any money with hosting and domain to access it.</p>
-<p>The objective for this website was having a about page telling my work experience and a blog with posts explaining subjects I like to study.</p>
-<p>The only issue with Github pages it that your website need to be static, but don't worry, we have a solution for this.</p>
+<p>The objective for this website was having an about page telling my work experience and a blog with posts explaining subjects I like to study.</p>
+<p>The only issue with Github Pages it that your website need to be static, but don't worry, we have a solution for this.</p>
 <p>So how to have a blog that is generally a dynamic website hosting as a static website on Github Pages?</p>
 <h4 id="hugo-is-the-answer">Hugo is the answer</h4>
 <p>Hugo is a framework that allows you generate a static website through out terminal commands.</p>
 <p>The idea is to have 2 repositories on your Github account, the first one will be placed your source from the Hugo's project and another to receive your generated static files.</p>
-<p>For this tutorial I'm using Mac OS, so all the instructions will be placed considering the following:</p>
+<p>For this tutorial, I'm using Mac OS, so all the instructions will be placed considering the following:</p>
 <ul>
 <li>You have Homebrew installed;</li>
 <li>Your are familiar using a terminal;</li>
 </ul>
 <h4 id="lets-begin">Let's begin&hellip;</h4>
-<p>First we have to install Hugo, using your preferred terminal enter:</p>
+<p>First we have to install Hugo, using your preferred terminal, enter:</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">brew install hugo</code></pre></div>
-<p>To check if it was correctly installed enter</p>
+<p>To check if it was correctly installed, enter</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo version</code></pre></div>
 <p>Now, we need to create your Hugo Project</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo new site hugo_site
@@ -300,10 +311,10 @@ Yes, it&#39;s is possible to have your personal website on Github and not expend
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">cp themes/beautifulhugo/exampleSite/config.toml .</code></pre></div>
 <p>With our theme added, we can run our project</p>
 <div class="highlight"><pre class="chroma"><code class="language-bash" data-lang="bash">hugo server -D</code></pre></div>
-<p>We can access it right now on your browser <a href="http://localhost:1313/">http://localhost:1313/</a></p>
+<p>We can access it locally right now on your browser <a href="http://localhost:1313/">http://localhost:1313/</a></p>
 <!-- raw HTML omitted -->
 <h2 id="deploying">Deploying</h2>
-<p>Like I explained before, we have to create two repositories on Github.
+<p>Like I've explained before, we have to create two repositories on Github.
 Access your Github account and create a repository called hugo_site and another called <code>&lt;your_github_username&gt;</code>.github.io</p>
 <p>Important: replace <code>&lt;your_github_username&gt;</code> with your exact Github username.</p>
 <p>Let's vinculate your local repository to the Github we have created</p>

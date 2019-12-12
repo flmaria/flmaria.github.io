@@ -5,9 +5,33 @@
     <link>https://flmaria.github.io/</link>
     <description>Recent content on Flávio Luiz Maria</description>
     <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Thu, 12 Dec 2019 16:17:52 -0500</lastBuildDate>
     
 	<atom:link href="https://flmaria.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>About</title>
+      <link>https://flmaria.github.io/about/</link>
+      <pubDate>Thu, 12 Dec 2019 16:17:52 -0500</pubDate>
+      
+      <guid>https://flmaria.github.io/about/</guid>
+      <description>Since 2003 I&#39;ve been dedicated to analysis and software development.
+I started my career working in a small software house, there I was involved with all stages of software engineering: requirements analysis, development of software, training and support.
+After that, I&#39;ve worked in a multi-national company with more than 5000 employees, and leader in Latin America, I had the opportunity to improve all my acquired technical knowledge, I was directly involved with innovation and leadership with my co-workers and large clients.</description>
+    </item>
+    
+    <item>
+      <title>Creating Your Personal Website With Hugo and Hosting on Github Pages</title>
+      <link>https://flmaria.github.io/posts/creating-your-personal-website-with-hugo-and-hosting-on-github-pages/</link>
+      <pubDate>Fri, 06 Dec 2019 12:51:21 -0500</pubDate>
+      
+      <guid>https://flmaria.github.io/posts/creating-your-personal-website-with-hugo-and-hosting-on-github-pages/</guid>
+      <description>In this post I will explain how I&#39;ve created this website your are accessing right now through the Github Pages.
+Yes, it&#39;s is possible to have your personal website on Github and not expend any money with hosting and domain to access it.
+The objective for this website was having an about page telling my work experience and a blog with posts explaining subjects I like to study.
+The only issue with Github Pages it that your website need to be static, but don&#39;t worry, we have a solution for this.</description>
+    </item>
     
   </channel>
 </rss>
