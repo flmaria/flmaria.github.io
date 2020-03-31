@@ -1,3 +1,3 @@
 # flmaria.github.io
 
-Generated source code of my website from [hugo_site](https://github.com/flmaria/hugo_site) project
+Generated source code of my website from [flmaria.github.io-source](https://github.com/flmaria/flmaria.github.io-source) project
